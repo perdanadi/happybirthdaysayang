@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Happyyy Birthdayyy Princessskuuu Cantikkkkk ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: url('gambar/love1.png') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: none;
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            flex-direction: column;
+        }
+        .slide img {
+            max-width: 90%;
+            max-height: 70%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .content {
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            color: #333;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 3s ease-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .extra-text {
+            position: absolute;
+            bottom: 20%;
+            width: 100%;
+            color: #f00;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            animation: slideIn 4s ease-out infinite;
+        }
+        @keyframes slideIn {
+            0% { transform: translateY(100px); opacity: 0; }
+            50% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-100px); opacity: 0; }
+        }
+        .balloon {
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            background: radial-gradient(circle, #fff, #f00);
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            animation: float 6s infinite;
+        }
+        .balloon:nth-child(2) {
+            background: radial-gradient(circle, #fff, #0f0);
+            animation-duration: 7s;
+        }
+        .balloon:nth-child(3) {
+            background: radial-gradient(circle, #fff, #00f);
+            animation-duration: 8s;
+        }
+        .balloon:nth-child(4) {
+            background: radial-gradient(circle, #fff, #ff0);
+            animation-duration: 9s;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-120vh); }
+        }
+        .flower {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 150px;
+            height: auto;
+            background: url('assets/bunga.jpeg') no-repeat center center;
+            background-size: contain;
+            animation: bounce 4s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+        .rose {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: auto;
+            background: url('assets/mawar.jpg') no-repeat center center;
+            background-size: contain;
+            animation: spin 6s infinite linear;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0); }
+            100% { transform: rotate(360deg); }
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ff0;
+            border-radius: 50%;
+            animation: confettiFall 3s infinite;
+        }
+        @keyframes confettiFall {
+            0% { transform: translateY(-100vh); opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+        .confetti:nth-child(odd) {
+            background: #f00;
+            animation-duration: 4s;
+        }
+        .confetti:nth-child(even) {
+            background: #0f0;
+            animation-duration: 5s;
+        }
+        .music {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1 -->
+    <div id="slide1" class="slide">
+        <div class="content">
+            Selamat Ulang Tahun, Cintakuuu Hari ini adalah hari istimewa ❤️❤️❤️!
+        </div>
+        <img src="gambar/foto1.jpeg" alt="Birthday Cake">
+        <div class="extra-text">Semoga sehat celalu dan bahagia celalu❤️❤️❤️</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div id="slide2" class="slide">
+        <div class="content">
+            Semoga Panjang Umur Princessskuu cantikkk❤️❤️❤️
+        </div>
+        <img src="gambar/foto2.jpeg" alt="Happy Birthday">
+        <div class="extra-text">Bayiii celaluuu adaa buwatt Princessskuuu Cantikkkkk ❤️❤️❤️</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div id="slide3" class="slide">
+        <div class="content">
+            Cemogaaaa yangg didoakannn diinginnkannn tercapaiii
+        </div>
+        <img src="gambar/foto3.jpeg" alt="Celebration">
+        <div class="extra-text"> Aamiinn ...</div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div id="slide4" class="slide">
+        <div class="content">
+            HIDUPPPPPKUUUUUUU ❤️❤️❤️❤️❤️
+        </div>
+        <img src="gambar/foto4.jpeg" alt="Lovely Couple">
+        <div class="extra-text">Bayiiii celaluuu cintaaa dannn cayangg princessskuuu cantikkk ❤️❤️❤️</div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div id="slide5" class="slide">
+        <div class="content">
+            I MISSSS YOUUUU HIDUPPPPKUUU ❤️❤️❤️
+        </div>
+        <img src="gambar/foto5.jpeg" alt="Couple Smiling">
+        <div class="extra-text">I LOVEEEE YOUUU SOOO MUCHHH HIDUPPPPKUUU ❤️❤️❤️</div>
+    </div>
+
+    <!-- Balloon and Confetti -->
+    <div class="balloon" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="balloon" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="balloon" style="left: 50%; animation-delay: 4s;"></div>
+    <div class="balloon" style="left: 70%; animation-delay: 6s;"></div>
+
+    <div class="flower"></div> <!-- Menambahkan bunga -->
+    <div class="rose"></div> <!-- Menambahkan animasi bunga mawar -->
+
+    <!-- Confetti -->
+    <div class="confetti" style="left: 10%; animation-delay: 0s; top: 10px;"></div>
+    <div class="confetti" style="left: 30%; animation-delay: 1s; top: 20px;"></div>
+    <div class="confetti" style="left: 50%; animation-delay: 2s; top: 30px;"></div>
+    <div class="confetti" style="left: 70%; animation-delay: 3s; top: 40px;"></div>
+    <div class="confetti" style="left: 90%; animation-delay: 4s; top: 50px;"></div>
+
+    <!-- Music -->
+    <audio class="music" controls autoplay muted>
+        <source src="music/perdana.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[index].style.display = 'flex';
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
